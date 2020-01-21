@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Upload Fotos</title>
+</head>
+
+<body>
+    <form method="POST" enctype="multipart/form-data">
+
+
+        <div align="center">
+            <h3>Armazenando imagens no banco de dados Mysql</h3>
+            <label for="conteudo">Enviar imagem:</label>
+            <input type="file" name="img" accept="image/*" class="form-control"> 
+
+          
+            <br> <br>
+            <input type="radio" name="size" value="10_15"> 10x15<br>
+            <input type="radio" name="size" value="12_15"> 12x15<br>
+            <input type="radio" name="size" value="13_18"> 13x18<br>
+
+            <br> 
+
+            <input type="radio" name="filter" value="Original"> Original
+
+            <input type="radio" name="filter" value="GrayScale"> Escala de cinza
+
+            <input type="radio" name="filter" value="Sepia"> Sepia<br>
+
+            <button type="submit" class="btn btn-success">Enviar</button>
+            <input id="bnt" type="reset" value="Limpar"/>
+
+        </div>
+
+        <div align="center">
+
+        <br>
+        <button type="submit" class="btn btn-success">Galeria de fotos enviadas</button>
+
+        <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+        <button type="submit" class="btn btn-success">Calcular valor a pagar</button>
+        <label for="conteudo">R$:</label><br><br>
+        <label for="conteudo">---------------------- Extrato ----------------------</label><br>
+        
+
+        <br> <br>
+
+        
+        </div>
+    </form>
+</body>
+
+</html>
