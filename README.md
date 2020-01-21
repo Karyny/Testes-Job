@@ -1,78 +1,53 @@
-Symfony Standard Edition
-========================
+# Teste
 
-**WARNING**: This distribution does not support Symfony 4. See the
-[Installing & Setting up the Symfony Framework][15] page to find a replacement
-that fits you best.
+## teste upload fotos (Mysql, symfony, php, html, css)
 
-Welcome to the Symfony Standard Edition - a fully-functional Symfony
-application that you can use as the skeleton for your new applications.
+## Classe upload fotos
+	### classe responsável por todo o upload 
 
-For details on how to download and get started with Symfony, see the
-[Installation][1] chapter of the Symfony Documentation.
+## Function uploadAction
+	### conexão inicial com o BD 
+	### envio do arquivo pelo usuário
+	### opção do tamanho
+	### quantidade fotos
+	### insert no BD
+	
 
-What's inside?
---------------
+## Function test
+	### valida arquivo enviado
+	### descreve informações do arquivo
 
-The Symfony Standard Edition is configured with the following defaults:
 
-  * An AppBundle you can use to start coding;
+## Function resize_value
+	### converte a imagem nas dimensões desejadas 
+	### salva quantidade de imagens em cada dimensão 
+	### calcula valor baseado na quantidade de imagens de cada dimensão
 
-  * Twig as the only configured template engine;
 
-  * Doctrine ORM/DBAL;
+## Function filterPhotos
+	### filtros 1- Escala de cinza ou 2- Sepia
+	### aplica filtro desejado e salva nova imagem 
 
-  * Swiftmailer;
 
-  * Annotations enabled for everything.
+## Function showPhotos 
+	### exibe todas as imagens enviadas com os detalhes de cada etapa 
 
-It comes pre-configured with the following bundles:
 
-  * **FrameworkBundle** - The core Symfony framework bundle
 
-  * [**SensioFrameworkExtraBundle**][6] - Adds several enhancements, including
-    template and routing annotation capability
+## Classe cont
+	### classe com conteudo HTML 
+	
+	### apresentação da tela de upload 
+	### botões para upload/save 
+	### botão com opções de medidas e filtros 
 
-  * [**DoctrineBundle**][7] - Adds support for the Doctrine ORM
 
-  * [**TwigBundle**][8] - Adds support for the Twig templating engine
+## Classe BD
+	### classe responsável por conexões e ações no BD 
+	### acesso ao banco de imagens 
 
-  * [**SecurityBundle**][9] - Adds security by integrating Symfony's security
-    component
 
-  * [**SwiftmailerBundle**][10] - Adds support for Swiftmailer, a library for
-    sending emails
 
-  * [**MonologBundle**][11] - Adds support for Monolog, a logging library
+## Classe routes 
+	### classe responsável pelas rotas de acesso 
 
-  * **WebProfilerBundle** (in dev/test env) - Adds profiling functionality and
-    the web debug toolbar
-
-  * **SensioDistributionBundle** (in dev/test env) - Adds functionality for
-    configuring and working with Symfony distributions
-
-  * [**SensioGeneratorBundle**][13] (in dev env) - Adds code generation
-    capabilities
-
-  * [**WebServerBundle**][14] (in dev env) - Adds commands for running applications
-    using the PHP built-in web server
-
-  * **DebugBundle** (in dev/test env) - Adds Debug and VarDumper component
-    integration
-
-All libraries and bundles included in the Symfony Standard Edition are
-released under the MIT or BSD license.
-
-Enjoy!
-
-[1]:  https://symfony.com/doc/3.4/setup.html
-[6]:  https://symfony.com/doc/current/bundles/SensioFrameworkExtraBundle/index.html
-[7]:  https://symfony.com/doc/3.4/doctrine.html
-[8]:  https://symfony.com/doc/3.4/templating.html
-[9]:  https://symfony.com/doc/3.4/security.html
-[10]: https://symfony.com/doc/3.4/email.html
-[11]: https://symfony.com/doc/3.4/logging.html
-[13]: https://symfony.com/doc/current/bundles/SensioGeneratorBundle/index.html
-[14]: https://symfony.com/doc/current/setup/built_in_web_server.html
-[15]: https://symfony.com/doc/current/setup.html
-# Auryn
